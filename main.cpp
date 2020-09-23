@@ -4,14 +4,15 @@
 using namespace std;
 
 int main() {
+	setlocale(LC_ALL, "rus");
 	int n;
-	cout << "Enter size matrix: ";
+	cout << "Введите размер матрицы: ";
 	cin >> n;
 	int** mas = new int* [n];
 	for (int i = 0; i < n; i++) {
 		mas[i] = new int[n];
 	}
-	cout << "Enter matrix elements: " << endl;
+	cout << "Введите элементы матрицы : " << endl;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			cin >> mas[i][j];
@@ -27,7 +28,7 @@ int main() {
 			}
 		}
 	}
-	cout << endl << "Matrix: ";
+	cout << endl << "Матрица: ";
 	for (int i = 0; i < n; i++) {
 		cout << endl;
 		for (int j = 0; j < n; j++) {
